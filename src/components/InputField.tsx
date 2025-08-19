@@ -78,7 +78,7 @@ function InputField() {
           </p>
 
           <form
-            className="flex flex-col md:m-15 md:mt-5 md:w-80 w-50 m-8 text-xs md:text-xl"
+            className="flex mt-4 flex-col md:m-15 md:mt-5 md:w-80 w-50 m-8 text-xs md:text-xl"
             onSubmit={handleSubmit}>
             {" "}
             <Input
