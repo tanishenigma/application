@@ -67,10 +67,10 @@ function InputField() {
 
   const [showPass, setShowPass] = useState(false);
   return (
-    <div className="bg-black  text-black dark:bg-black  md:w-fit md:h-fit p-10 rounded-xl dark:text-white text-xs md:text-xl">
+    <div className="  text-black md:w-fit md:h-fit p-10 rounded-xl dark:text-white text-xs md:text-xl">
       <div className="bg-white dark:bg-white/10 dark:shadow-lg border border-white/20 rounded-xl  ">
-        <div className="flex flex-col my-10 text-left ">
-          <h1 className="text-2xl md:text-5xl px-8 font-black md:mt-10 ">
+        <div className="flex flex-col my-2 md:my-10 text-left ">
+          <h1 className="text-2xl mt-5 md:text-5xl px-8 font-black md:mt-10 ">
             Sign Up
           </h1>
           <p className="text-xs md:text-lg mt-2 md:mt-5 px-8 text-zinc-400">
@@ -78,7 +78,7 @@ function InputField() {
           </p>
 
           <form
-            className="flex flex-col md:m-15 md:mt-5 md:w-80 w-50 m-12 text-xs md:text-xl"
+            className="flex flex-col md:m-15 md:mt-5 md:w-80 w-50 m-8 text-xs md:text-xl"
             onSubmit={handleSubmit}>
             {" "}
             <Input
@@ -92,7 +92,7 @@ function InputField() {
               placeholder="type your name"
               size="sm"
               variant="ghost"
-              helperText="Username must be more than 3 characters"
+              helperText="Username must be more than 3 chars"
             />
             <Input
               label="Email"
@@ -120,7 +120,7 @@ function InputField() {
               size="sm"
               variant="ghost"
               type={!showPass ? "password" : "text"}
-              helperText="Password must be more than 6 characters">
+              helperText="Password must be more than 6 chars">
               {" "}
               <button
                 type="button"
@@ -135,14 +135,14 @@ function InputField() {
                 )}
               </button>
             </Input>
-            <div className="flex items-center mb-5 gap-x-2 cursor-pointer text-zinc-500/80">
+            <div className="flex items-center mb-5 gap-x-2 cursor-pointer text-zinc-500/80 md:justify-center justify-end">
               <button className="cursor-pointer p-2 px-5 w-fit md:w-full md:p-3 bg-black text-white  dark:bg-zinc-600 rounded-full  hover:bg-zinc-700 dark:hover:bg-zinc-500 transition-colors duration-200">
                 Sign Up
               </button>
             </div>
           </form>
 
-          <div className="text-right mt-2 items-center mb-5 cursor-pointer text-zinc-500 text-sm">
+          <div className="text-right mt-2 items-center mb-5 cursor-pointer text-zinc-500 text-xs md:text-sm">
             <span>Already have an account?</span>
             <a href="./signin">
               <button className="font-bold bg-none cursor-pointer ml-1 text-blue-800 hover:text-blue-600 pr-9">

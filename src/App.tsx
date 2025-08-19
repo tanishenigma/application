@@ -4,7 +4,7 @@ import DarkMode from "./components/DarkMode";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white gap-y-5">
+    <div className="flex flex-col items-center justify-center min-h-screen  gap-y-5">
       <h1 className="text-2xl font-black ">Component-1 (Input Field)</h1>
       <DarkMode />
       <InputField />

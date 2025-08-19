@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+module.exports = {
+  theme: {
+    extend: {
+      fontsize: {
+        'xxs':'0.625rem', ;
+      }
+    }
+  }
+}

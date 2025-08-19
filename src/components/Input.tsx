@@ -56,7 +56,7 @@ const Input = ({
           onChange={onChange}
         />
         {!invalid && helperText && (
-          <p className="text-gray-500 text-xs">{helperText}</p>
+          <p className="text-gray-500 md:text-xs text-[10px]">{helperText}</p>
         )}
         {invalid && error && value.length < 5 && (
           <p className="text-red-600 text-xs ">{error}</p>
