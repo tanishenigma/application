@@ -2,19 +2,6 @@ import React, { useState } from "react";
 import Input from "./Input";
 import { Eye, EyeOff } from "lucide-react";
 
-interface InputFieldProps {
-  value?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  label?: string;
-  placeholder?: string;
-  helperText?: string;
-  errorMessage?: string;
-  disabled?: boolean;
-  invalid?: boolean;
-  variant?: "filled" | "outlined" | "ghost";
-  size?: "sm" | "md" | "lg";
-}
-
 function InputField() {
   const [inputField, setInputField] = useState({
     username: "",
