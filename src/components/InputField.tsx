@@ -67,8 +67,8 @@ function InputField() {
 
   const [showPass, setShowPass] = useState(false);
   return (
-    <div className="  text-black md:w-fit md:h-fit p-10 rounded-xl dark:text-white text-xs md:text-xl">
-      <div className="bg-white dark:bg-white/10 dark:shadow-lg border border-white/20 rounded-xl  ">
+    <div className="  text-black md:w-fit md:h-fit p-10 rounded-xl dark:text-white text-xs md:text-x ">
+      <div className="bg-white dark:bg-zinc-950/80 shadow-xl dark:shadow-lg border dark:border-white/20 rounded-xl  ">
         <div className="flex flex-col my-2 md:my-10 text-left ">
           <h1 className="text-2xl mt-5 md:text-5xl px-8 font-black md:mt-10 ">
             Sign Up
@@ -121,7 +121,6 @@ function InputField() {
               variant="ghost"
               type={!showPass ? "password" : "text"}
               helperText="Password must be more than 6 chars">
-              {" "}
               <button
                 type="button"
                 className="cursor-pointer"

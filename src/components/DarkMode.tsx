@@ -3,15 +3,26 @@ import { useEffect, useState } from "react";
 
 const DarkMode = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
   useEffect(() => {
-    const body = document.body;
+    const root = document.getElementById("storybook-root");
+    if (!root) return;
+
     if (isDarkMode) {
-      body.classList.add("dark");
+      root.classList.add("dark");
     } else {
-      body.classList.remove("dark");
+      root.classList.remove("dark");
     }
   }, [isDarkMode]);
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("dark-mode", "true");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("dark-mode", "false");
+    }
+  }, [isDarkMode]);
+
   return (
     <div>
       {isDarkMode ? (
